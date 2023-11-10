@@ -80,7 +80,7 @@ Create a .env file for containing the API key. More info on why [here](#info-on-
 Add YOUR API key to the .env file with the same variable name.
 
 ```bash
-  echo "API_KEY = 'YOUR API KEY'" >> .env2
+  echo "API_KEY = 'YOUR API KEY'" >> .env
 ```
 
 i.e. "API_KEY = '34095873498577345987'"
