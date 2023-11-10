@@ -8,6 +8,17 @@ The server can be seen as a simple skeleton for the backend of an eventual
 implementation of an application where users can find private/public EV chargers  
 and rent them. It is mainly set up to allow for CRUD operations on the database.
 
+Table of Contents
+=================
+
+   * [File structure](#file-structure)
+      * [Data collection](#data-collection)
+      * [Server](#server)
+   * [How to run](#how-to-run)
+      * [For running data collection](#for-running-data-collection)
+      * [For running the server](#for-running-the-server)
+      * [Info on the API used to get the data](#info-on-the-api-used-to-get-the-data)
+
 ## File structure
 ### Data collection
 There are two notebooks one for downloading the data using the API key: [here](Sharge_Data_Collection/download_API_data.ipynb)  
