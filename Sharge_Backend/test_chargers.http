@@ -1,0 +1,54 @@
+
+
+# Get all chargers
+
+GET http://localhost:5000/public-chargers
+
+#####################
+
+# Get charger with id 2
+GET http://localhost:5000/public-chargers/2
+
+####################
+
+# Add a new charger.
+
+POST http://localhost:5000/public-chargers
+Content-Type: application/json
+
+{
+    "OwnedBy": "PowerCompany Inc.",
+    "PowerKw": 100,
+    "NumberChargingPoints": 4,
+    "Connector": "2 = CCS",
+    "Open24h": true,
+    "Lat": 55.123456,
+    "Lng": 12.345678,
+    "RealTimeInformation": true,
+    "ConnectorID": 12345678,
+    "ConnectorNumber": 1,
+    "ConnectorSensorStatus": "1 = Available",
+    "Price": 4.99
+}
+
+#################
+# Update Charger
+
+PUT http://localhost:5000/public-chargers/3
+Content-Type: application/json
+
+{
+    "OwnedBy": "Updated PowerCompany Inc.",
+    "PowerKw": 120,
+    "NumberChargingPoints": 5,
+    "Connector": "1 = Type 2",
+    "Open24h": false,
+    "Lat": 55.54321,
+    "Lng": 12.98765,
+    "RealTimeInformation": false,
+    "ConnectorID": 98765432,
+    "ConnectorNumber": 2,
+    "ConnectorSensorStatus": "0 = Unavailable",
+    "Price": 6.99
+}
+
